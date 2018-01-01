@@ -1,6 +1,8 @@
 # keurig
 Automatic water filling for keurig coffee maker
 
+![Alt Text](photo2.jpg)
+
 Simple microcontroller project that will automatically fill a keurig machine
 with water when the tank gets low.  Based on ATtiny84 microcontroller, uses
 3 I/O pins
@@ -38,13 +40,14 @@ to a bus pirate connected to the ISP.
 
 ![Alt text](schematic.jpg?raw=true "Schematic of the controller board")
 
-Photo of the keurig filling machine
+Details of the hardware
 
-photo.jpg is a picture of the complete unit.  Orientation should be rotated
-by 90 degrees.  Basically I built a small plexiglass platform on top of the
-keurig filter in the tank.  Inside the filter is the 8" eTape liquid level
-sensor.  On the platform you'll see the 12V water valve solenoid connected
-to the water line via a standard ice-cube maker plastic 1/4" line.  You can
+![Alt Text](photo.jpg)
+
+Basically I built a small plexiglass platform on top of the keurig filter 
+in the tank.  Inside the filter is the 8" eTape liquid level sensor.  On 
+the platform you'll see the 12V water valve solenoid connected to the 
+water line via a standard ice-cube maker plastic 1/4" line.  You can
 see the controller board beside the solenoid with the LEDs blue.
 
 Behind the microcontroller board is a 5V to 12V buck convertor to provide
@@ -56,5 +59,3 @@ when running the Makefile.  Also, I can minicom into the buspirate and put
 it in RAW UART mode to receive the printf statements in the code while
 debugging.
 
-photo2.jpg shows the auto filler inside the tank from a different
-perspective to give you an idea how it fits inside the tank
