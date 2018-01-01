@@ -41,7 +41,12 @@ to a bus pirate connected to the ISP.
 ![Alt text](schematic.jpg?raw=true "Schematic of the controller board")
 **Note:** The microcontroller is powered by a 5V adapter, the solenoid 
 requires 12V, so a buck converter to used to supply the 12V for the 
-solenoid only.
+solenoid only.  The 20K resistor connected between the gate and source of
+the MOSFET is used to drain an residual capacitance of the MOSFET if the
+microcontroller output is in an Hi-Z state, thus turning off the solenoid.
+Any value for this resistor should do from 20K to 100k.  The flywheel diode
+protects the MOSFET from any induction coil induced current when it shuts
+off, any general purpose diode will do that has a good rating as shown.
 
 **Details of the hardware**
 
