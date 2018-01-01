@@ -34,3 +34,25 @@ Sofware serial debug
 
 - includes a simple software serial debug, that allows printf to output strings
 to a bus pirate connected to the ISP.
+
+Schematic
+
+The complete schematic of the controller board is in schematic.jpg
+
+Photo of the keurig filling machine
+
+photo.jpg is a picture of the complete unit.  Orientation should be rotated
+by 90 degrees.  Basically I built a small plexiglass platform on top of the
+keurig filter in the tank.  Inside the filter is the 8" eTape liquid level
+sensor.  On the platform you'll see the 12V water valve solenoid connected
+to the water line via a standard ice-cube maker plastic 1/4" line.  You can
+see the controller board beside the solenoid with the LEDs blue.
+
+Behind the microcontroller board is a 5V to 12V buck convertor to provide
+the power for the solenoid.
+
+On the microcontroller board between the Power MOSFET and the ATtiny84 is
+the 6 pin ISP connector.  I use a Bus Pirate to program the microcontroller 
+when running the Makefile.  Also, I can minicom into the buspirate and put
+it in RAW UART mode to receive the printf statements in the code while
+debugging.
