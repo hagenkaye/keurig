@@ -56,3 +56,6 @@ the 6 pin ISP connector.  I use a Bus Pirate to program the microcontroller
 when running the Makefile.  Also, I can minicom into the buspirate and put
 it in RAW UART mode to receive the printf statements in the code while
 debugging.
+
+photo2.jpg shows the auto filler inside the tank from a different
+perspective to give you an idea how it fits inside the tank
