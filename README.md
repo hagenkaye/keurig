@@ -39,6 +39,9 @@ to a bus pirate connected to the ISP.
 
 
 ![Alt text](schematic.jpg?raw=true "Schematic of the controller board")
+**Note:** The microcontroller is powered by a 5V adapter, the solenoid 
+requires 12V, so a buck converter to used to supply the 12V for the 
+solenoid only.
 
 **Details of the hardware**
 
