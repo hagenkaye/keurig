@@ -35,9 +35,8 @@ Sofware serial debug
 - includes a simple software serial debug, that allows printf to output strings
 to a bus pirate connected to the ISP.
 
-Schematic
 
-The complete schematic of the controller board is in schematic.jpg
+![Alt text](schematic.jpg?raw=true "Schematic of the controller board")
 
 Photo of the keurig filling machine
 
